@@ -3,9 +3,21 @@
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 # 
 # Environment: Don't forget to add:
-# GOOGLE_APPLICATION_CREDENTIALS      $(cat <credential-file>.json)	
-# GOOGLE_COMPUTE_ZONE	              defaults to us-west1-a	
-# SREGISTRY_GOOGLE_PROJECT            (grab from browser url)
+# GOOGLE_APPLICATION_CREDENTIALS     
+{
+  "type": "service_account",
+  "project_id": "firstnginx",
+  "private_key_id": "b76fd1341a7fcb3869dee2802cdf6e13148be8ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsYzXqqJURiAYw\naNC8vqy77CHwlThzbR+kZxaHnt3io5+u8VJNCyfz5Vqwo79KvcrRYLJUcEX3g9Lp\n8RQB5cKrtocnethp/Orm+SayXTSCvKi/OChZoFZYq0J3o4OdEL6/1fnp2x1sWPnb\nL45ewBSxH1tQ9sRmNsRKbTTFBt8ROFnqhAfLOPJNgiGSS9T1LJeG5jDzjXOPQf2F\n2pDGAAJU6yRQzEafHS+RbI1FNaCOdzBB3Vsuz66wkgnLLlS7DW7SnVeBd70Cm5Xo\nN/HmMow9/qlqUFp9nj9N9GJK542kCFtW3CJfIwpy3w4fq/47zYXNkl7MnZL2Z6WY\nZNMDGFQPAgMBAAECggEADFV42RZAvCVgU/xb2vVFhJiLgRwcEt4e4nNhwEhUlc+h\nMDIh8lM3A5NIXtUIbb+QkFR7zeDOkLwEzioqhUw8Fm8T0nZOn56x696trxtOE4CO\nDkhlUqxPIT73nXm8g/Nbwnv7yoib3VGsZstLQ2o40MdukCdnu+x1NOIFYYdxVFj2\nnBg+RbO/PootWK+D+pjhYX5uL1AnmyYRMhZQ4JNyg9F83XW+InxkDWtR6ig4ezf8\nSX6IdLUZoj6g7cQDv9SlmMGNDcavL4+GUeg52vY/m3ChXSsohGb3c4RlH1ioL07A\nxPf+IaltHyEk3AWreLzoZYIGtz3PdYtmg5Q2nPlDMQKBgQDm22Tw3KVkqDhR19mS\nfZ7lXw/C1KgpLUk4vcRX4xVhmSI5tGufSgCjzTVUduGOZiI+GdImV0ePbX2gnZLI\nldJlURnyRvPzqluevGLVRqptxOUu+GoC9/HytMpligoU4ccqIriZkbyeImhMtkBg\nSnGwq6xrFcI9v8WAihpKpxJ/SQKBgQC/KZvEOOFa9wzHi+IzEJfoE23Xjy5KJdMw\nG88V83D7uvc7JIGm1CCce7Eru0Rd95tY0zYtE4CRuxEuI3SzoG6NYzRZ2tKSBpcb\nZjhhS2TRrHYVZiIWP9+EpE9ZvoeQPKl3UegS8uCC4vwUR3zJpt6HF5x0KeqG4FMy\nKPLlU3VAlwKBgQCQM9Espxbk9jMf5G2ylKdxbVzh/YYBGpmXSOphX6aWbVo0o19q\ng4Y8y00ZspyYH3IaSnS7oF9B10nWzzbF9tgSk4NalDmEJhDO6avuvxJsOMZT/bXy\nnsBSM94NaRl9C78lscSPoLoqKSHvcRRrUXUMv1+XEGNhwO10qk9b/FqQiQKBgHbq\n6mSBweb1orSL13ZOz0DmvUEIaBJmP19BHW0ZWOKwJ1ZaWnEuqu7Nn6SFxXzzKGd0\nVNJrvGJrzb82/UU0+zDnUszG7JE8mknIKDCWVyx8LaUYOQJAT8rS8C3y8aAPrJh2\nknkfL/0cORZgdkd3kBzX2lMFNEkdSYP9p0Rzy5AXAoGAcORQKddIr70fxolMGDpi\ndnUct7WJEaDZAiyuVW/V1s8/Uf/vNjZZGFDIXYO8xFCH+cWa3TeOhi+xuckKYX5V\n00gbpY1lxvHhOziup4ckKrvG6qioxwmuHQWneHSgZyS0U9Iw9s9hIU08aADyfap6\n9uuspQVcgcOEO+3yuIITwnI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "hasnaeagouram@firstnginx.iam.gserviceaccount.com",
+  "client_id": "104844375596372638541",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hasnaeagouram%40firstnginx.iam.gserviceaccount.com"
+}
+# GOOGLE_COMPUTE_ZONE	              europe-west6-a	
+# SREGISTRY_GOOGLE_PROJECT            104844375596372638541
 
 # Optional Variables
 # SREGISTRY_GOOGLE_BUILD_SINGULARITY_VERSION defaults to 3.0.2-slim
