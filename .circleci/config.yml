@@ -17,7 +17,7 @@
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hasnaeagouram%40firstnginx.iam.gserviceaccount.com"
 }
 # GOOGLE_COMPUTE_ZONE	              europe-west6-a	
-# SREGISTRY_GOOGLE_PROJECT            104844375596372638541
+# SREGISTRY_GOOGLE_PROJECT          104844375596372638541
 
 # Optional Variables
 # SREGISTRY_GOOGLE_BUILD_SINGULARITY_VERSION defaults to 3.0.2-slim
@@ -36,7 +36,7 @@ defaults: &defaults
     environment:
 
       # The GitHub username / reponame that the container will be submit to
-      - REGISTRY_BASE: singularityhub/registry-org
+      - REGISTRY_BASE: hasnae-ag/registry-org
 
       # Defaults for Google Build and Google Storage Storage with sregistry
       - SREGISTRY_CLIENT: google-build
